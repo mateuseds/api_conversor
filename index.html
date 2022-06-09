@@ -11,11 +11,13 @@
 <body>
     <div class="app">
         <div class="container">
-            <h1 class="title">Conversor de Moeda</h1>
-            <p class="subtitle">$ Dolares ➜ Reais R$</p>
-            <input class="input" type="number" id="dolar" placeholder="Insira o valor em dolar" size="2" />
-            <button class="button" id="converterDolar" type="submit" onclick="converterDolar()">Converter</button>
-            <p class="result" id="valorConvertido"></p>
+            <form id="formConvert">
+                <h1 class="title">Conversor de Moeda</h1>
+                <p class="subtitle">$ Dolares ➜ Reais R$</p>
+                <input class="input" type="text" id="inputDolar" placeholder="Insira o valor em dolar" onkeypress="return onlynumber();" />
+                <button class="button" id="inputConvert" value="Converter" type="submit">Converter</button>
+                <p class="result" id="valorConvertido"></p>
+            </form>
         </div>
     </div>
     <script src="js/function.js"></script>
